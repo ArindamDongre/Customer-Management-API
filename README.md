@@ -35,7 +35,7 @@ This project demonstrates basic NodeJS APIs with MongoDB integration, including 
 
 ## API Endpoints
 
-1. /db-save
+1. **/db-save**
 
 POST http://localhost:3000/db-save
 
@@ -54,9 +54,8 @@ Validations:
 
     All parameters required.
     Age must be above 15.
-    Rate limiting: 1 hit per 2 mins, 2 hits per 5 mins.
 
-2. /time-based-api
+2. **/time-based-api**
 
 POST http://localhost:3000/time-based-api
 
@@ -78,7 +77,7 @@ Restrictions:
     Not available on Monday.
     Not available between 08:00 and 15:00.
 
-3. /db-search
+3. **/db-search**
 
 GET http://localhost:3000/db-search
 
@@ -88,13 +87,17 @@ Response:
 
     Customer names and API response time.
 
-Tools Used
+## Rate limiting on all api endpoints: 
+    - Max 1 request per 2 minutes per customer.
+    - Max 2 requests per 5 minutes.
 
-    Node.js
-    Express.js
-    MongoDB
-    Moment.js
+##Tools Used
 
-License
+-Node.js
+-Express.js
+-MongoDB
+-Moment.js
+
+##License
 
     This project is licensed under the MIT License.
