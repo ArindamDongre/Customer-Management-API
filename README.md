@@ -93,10 +93,10 @@ This project demonstrates basic NodeJS APIs with MongoDB integration, including 
 
 ## Tools Used
 
--Node.js
--Express.js
--MongoDB
--Moment.js
+- Node.js
+- Express.js
+- MongoDB
+- Moment.js
 
 ## License
 
