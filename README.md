@@ -38,16 +38,13 @@ POST http://localhost:3000/db-save
 
 Saves customer data with validations.
 
-Request Body:
-
-json
-
-{
-  "customer_name": "arthmate1",
-  "dob": "2001-09-19",
-  "monthly_income": "1200"
-}
-
+  Request Body:
+   ```json
+     {
+      "customer_name": "arthmate1",
+      "dob": "2001-09-19",
+      "monthly_income": "1200"
+     }
 Validations:
 
     All parameters required.
