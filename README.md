@@ -15,10 +15,12 @@ This project demonstrates basic NodeJS APIs with MongoDB integration, including 
    ```sh
    git clone https://github.com/ArindamDongre/Project_1.git
    cd Project_1
+   ```
 2. **Install dependencies:**
 
    ```sh
    npm install
+   ```
 
 3. **Set up MongoDB:**
 
@@ -29,6 +31,7 @@ This project demonstrates basic NodeJS APIs with MongoDB integration, including 
 
    ```sh
     node server.js
+   ```
 
 ## API Endpoints
 
@@ -38,13 +41,15 @@ POST http://localhost:3000/db-save
 
 Saves customer data with validations.
 
-  Request Body:
+Request Body:
+
    ```json
      {
       "customer_name": "arthmate1",
       "dob": "2001-09-19",
       "monthly_income": "1200"
      }
+   ```
 Validations:
 
     All parameters required.
@@ -59,13 +64,14 @@ Saves customer data with time-based restrictions.
 
 Request Body:
 
-json
+```json
 
 {
-  "customer_name": "arthmate",
+  "customer_name": "arthmate2",
   "dob": "2001-09-19",
   "monthly_income": "1200"
 }
+```
 
 Restrictions:
 
@@ -91,4 +97,4 @@ Tools Used
 
 License
 
-This project is licensed under the MIT License.
+    This project is licensed under the MIT License.
