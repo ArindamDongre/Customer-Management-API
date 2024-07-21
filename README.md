@@ -22,8 +22,8 @@ This project demonstrates basic NodeJS APIs with MongoDB integration, including 
 
 3. **Set up MongoDB:**
 
-    *Get your MongoDB connection string from MongoDB Atlas.
-    *Update the connection string in server.js.
+    -Get your MongoDB connection string from MongoDB Atlas.
+    -Update the connection string in server.js.
 
 Run the server:
 
