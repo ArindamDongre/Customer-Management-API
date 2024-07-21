@@ -37,67 +37,67 @@ This project demonstrates basic NodeJS APIs with MongoDB integration, including 
 
 1. **/db-save**
 
-POST http://localhost:3000/db-save
+   * POST http://localhost:3000/db-save
 
-Saves customer data with validations.
+   * Saves customer data with validations.
 
-Request Body:
+   * Request Body:
 
-   ```json
+     ```json
      {
       "customer_name": "arthmate1",
       "dob": "2001-09-19",
       "monthly_income": "1200"
      }
-   ```
-Validations:
+     ```
+   * Validations:
 
-    All parameters required.
-    Age must be above 15.
+         - All parameters required.
+         - Age must be above 15.
 
 2. **/time-based-api**
 
-POST http://localhost:3000/time-based-api
+   * POST http://localhost:3000/time-based-api
 
-Saves customer data with time-based restrictions.
+   * Saves customer data with time-based restrictions.
 
-Request Body:
+   * Request Body:
 
-```json
+     ```json
 
-{
-  "customer_name": "arthmate2",
-  "dob": "2001-09-19",
-  "monthly_income": "1200"
-}
-```
+     {
+      "customer_name": "arthmate2",
+      "dob": "2001-09-19",
+      "monthly_income": "1200"
+     }
+     ```
+   * Restrictions:
 
-Restrictions:
-
-    Not available on Monday.
-    Not available between 08:00 and 15:00.
+         - Not available on Monday.
+         - Not available between 08:00 and 15:00.
 
 3. **/db-search**
 
-GET http://localhost:3000/db-search
+   * GET http://localhost:3000/db-search
 
-Finds customer names aged between 10 and 25.
+   * Finds customer names aged between 10 and 25.
 
-Response:
+   * Response:
 
-    Customer names and API response time.
+         Customer names and API response time.
 
-## Rate limiting on all api endpoints: 
+## Rate Limiting on all API Endpoints
+
     - Max 1 request per 2 minutes per customer.
     - Max 2 requests per 5 minutes.
 
-##Tools Used
+## Tools Used
 
 -Node.js
 -Express.js
 -MongoDB
 -Moment.js
 
-##License
+## License
 
     This project is licensed under the MIT License.
